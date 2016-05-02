@@ -2,9 +2,9 @@ using System;
 using System.Web.Optimization;
 
 [assembly: WebActivator.PostApplicationStartMethod(
-    typeof(I4X4Trail.App_Start.DurandalConfig), "PreStart")]
+    typeof(I4XFF.App_Start.DurandalConfig), "PreStart")]
 
-namespace I4X4Trail.App_Start
+namespace I4XFF.App_Start
 {
     public static class DurandalConfig
     {

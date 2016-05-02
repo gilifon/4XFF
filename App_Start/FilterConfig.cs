@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace I4X4Trail
+namespace I4XFF
 {
     public class FilterConfig
     {

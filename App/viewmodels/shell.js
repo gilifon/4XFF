@@ -4,7 +4,7 @@
     var selectedSubMenu = ko.observable('');
     var selectedMainMenu = ko.observable('main');
     var version = app.version;
-    var lang = ko.observable('en');
+    var lang = ko.observable('he');
 
     this.toggleLanguage = function()
     {
@@ -25,7 +25,7 @@
         activate: function () {
             router.map([
                 { route: 'Dashboard', title: 'Dashboard', moduleId: 'viewmodels/dashboard', nav: true },
-                { route: '', title: 'Sections', moduleId: 'viewmodels/sections', nav: true }
+                { route: '', title: 'Main', moduleId: 'viewmodels/sections', nav: true }
             ]).buildNavigationModel();
 
             return router.activate();

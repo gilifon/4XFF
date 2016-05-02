@@ -12,8 +12,11 @@
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6">
                 <ul class="list-unstyled top-v1-contacts">
-                    <li>
-                        חובבי רדיו בשביל ישראל
+                    <li data-bind="visible:lang() == 'he'">
+                        4XFF - פרוייקט WWFF ישראלי
+                    </li>
+                    <li data-bind="visible:lang() == 'en'">
+                        4XFF - Israeli WWFF program
                     </li>
                     <!--<li>
                         <i class="icon-envelope"></i>דואל: <a href="mailto:info@4x4trail.org">info@4x4trail.org</a>

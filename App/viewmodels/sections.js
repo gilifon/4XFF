@@ -1,9 +1,10 @@
-﻿define(['viewmodels/shell'], function (shell) {
+﻿define(['viewmodels/shell', 'services/utilities', 'services/httpService'], function (shell, utilities, httpService) {
 
     //properties
     this.linkList = ko.observableArray();
     this.callsign = ko.observable('');
     this.didNotWork = ko.observable(false);
+    var searchInput = ko.observable();
 
     this.GetWokedSections = function () {
         $.ajax({
@@ -30,13 +31,19 @@
         activate: function () {
             //shell.selectedSubMenu('ham');
             shell.selectedMainMenu('sections');
+            searchInput.subscribe(function (newValue) {
+                if (newValue === undefined)
+                    return;
+                utilities.applyRowSearch("#dataTable tbody tr", newValue);
+            });
         },
         compositionComplete: function () {
             
         },
         linkList: linkList,
         callsign: callsign,
-        didNotWork:didNotWork,
+        didNotWork: didNotWork,
+        searchInput:searchInput,
         shell: shell
     };
 

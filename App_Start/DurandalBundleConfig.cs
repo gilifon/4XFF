@@ -1,7 +1,7 @@
 using System;
 using System.Web.Optimization;
 
-namespace I4X4Trail {
+namespace I4XFF {
   public class DurandalBundleConfig {
     public static void RegisterBundles(BundleCollection bundles) {
       bundles.IgnoreList.Clear();

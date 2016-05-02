@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace I4X4Trail
+namespace I4XFF
 {
     public static class WebApiConfig
     {

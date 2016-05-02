@@ -680,6 +680,7 @@
     <Content Include="assets\flags\flags\4x3\zm.svg" />
     <Content Include="assets\flags\flags\4x3\zw.svg" />
     <Content Include="assets\flags\flags\4x3\zz.svg" />
+    <Content Include="assets\img\4xff.png" />
     <Content Include="assets\img\english.png" />
     <Content Include="assets\img\israel_map.jpg" />
     <Content Include="assets\img\iarc.png" />
@@ -702,6 +703,7 @@
     <Content Include="assets\img\trail_view2.jpg" />
     <Content Include="assets\img\under_contruction.jpg" />
     <Content Include="assets\img\trail_view.jpg" />
+    <Content Include="assets\img\wwff_logo.png" />
     <Content Include="assets\js\linq.min.js" />
     <Content Include="assets\js\simpleCart.min.js" />
     <Content Include="assets\plugins\bootstrap-datetimepicler\css\bootstrap-datetimepicker.min.css" />
@@ -761,9 +763,6 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\ie10mobile.css" />
-    <Content Include="Content\images\icon.png" />
-    <Content Include="Content\images\ios-startup-image-landscape.png" />
-    <Content Include="Content\images\ios-startup-image-portrait.png" />
     <Content Include="Content\starterkit.css" />
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />

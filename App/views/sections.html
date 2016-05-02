@@ -1,21 +1,62 @@
 ﻿<div class="container" >
     
-    <h3 data-bind="visible:shell.lang() == 'he'">4XFF - פרוייקט WWFF ישראלי</h3>
-    <h3 style="direction:ltr" data-bind="visible:shell.lang() == 'en'">4XFF - Israeli WWFF Program</h3>
-
+    <!--<h3 data-bind="visible:shell.lang() == 'he'">4XFF - פרוייקט WWFF ישראלי</h3>
+    <h3 style="direction:ltr" data-bind="visible:shell.lang() == 'en'">4XFF - Israeli WWFF Program</h3>-->
+    <p></p>
     <div class="panel-group acc-v1 margin-bottom-40" id="accordion">
+
         <div class="panel panel-default" data-bind="visible:shell.lang() == 'he'">
             <div class=" panel-heading">
-            <h4 class="panel-title">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i0">
-                     חוקים
-                </a>
-            </h4>
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#background">
+                        רקע
+                    </a>
+                </h4>
+            </div>
+            <div id="background" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        מטרת התוכנית היא להסב את תשומת הלב לחשיבות השמירה על הטבע - החי, הצומח והדומם.<br />
+                        ברוח זו מקימים חובבי רדיו את התחנות שלהם ומפעילים מתוך פארקים, גנים לאומיים, שמורות טבע ואיזורים מוגנים.<br />
+                        התוכנית היא בין לאומית, איננה מסחרית, ומנוהלת ע"י רכזים של מספר רב של תוכניות חי וצומח לאומיות.<br />
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="panel panel-default" style="direction:ltr" data-bind="visible:shell.lang() == 'en'">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#background_en">
+                        About The Program
+                    </a>
+                </h4>
+            </div>
+            <div id="background_en" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>
+                        The WWFF program wants to draw attention to the importance of protecting nature, flora and fauna. In this spirit amateur radio operators set up and operate their radio stations from designated nature parks and protected nature areas – generating attention for these areas whilst giving the ham radio community an interesting activity to contact. WWFF is an international and non-commercial program run by the coordinators of a large number of national Flora and Fauna programs.
+                    </p>
+                    <p>
+                        From the <a href="http://wwff.co/about/" target="_blank" style="text-decoration:underline">program website</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default" data-bind="visible:shell.lang() == 'he'">
+            <div class=" panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i0">
+                        חוקים
+                    </a>
+                </h4>
+            </div>
             <div id="i0" class="panel-collapse collapse">
                 <div class="panel-body">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <h1 class="text-center">חוקי התוכנית</h1>
+                        <h3 class="text-center">חוקי התוכנית</h3>
                         <div class="row-fluid text-right">
                             <p>מפעילים</p>
                             <ul>
@@ -34,9 +75,7 @@
                                 </li>
                                 <li>על כל הפעלה לארוך לפחות שעתיים.</li>
                                 <li>על המפעילים לספק קובץ לוג אלקטרוני בפורמט ADIF לכתובת <a href="mailto:gilifon@gmail.com" style="text-decoration:underline">gilifon@gmail.com</a></li>
-                                <li>
-                                    את בקשת התעודה יש להגיש דרך <a href="http://logsearch.wwff.co/index.php" target="_blank" style="text-decoration:underline">אתר התוכנית</a>
-                                </li>
+                                
                             </ul>
                             <p>ציידים</p>
                             <ul>
@@ -45,9 +84,6 @@
                                 </li>
                                 <li>
                                     כל קשר שהתבצע עם מפעיל תקף עבור קבלת תעודת "צייד" ללא קשר למספר הקשרים שנעשו באותה הפעלה.
-                                </li>
-                                <li>
-                                    את בקשת התעודה יש להגיש דרך <a href="http://logsearch.wwff.co/index.php" target="_blank" style="text-decoration:underline">אתר התוכנית</a>
                                 </li>
                             </ul>
                         </div>
@@ -68,7 +104,7 @@
                     <div class="row">
                         <div class="col-md-12">
 
-                            <h1 class="text-center">4XFF Program Rules</h1>
+                            <h3 class="text-center">4XFF Program Rules</h3>
                             <div class="row-fluid text-left">
                                 <p>Activators</p>
                                 <ul>
@@ -87,7 +123,6 @@
                                     </li>
                                     <li>Each activation must have a minimum duration of 2 hours.</li>
                                     <li>The activator must provide an electronic log file in ADIF format to the following email: <a href="mailto:gilifon@gmail.com" style="text-decoration:underline">gilifon@gmail.com</a>.</li>
-                                    <li>Certificate requests should be sent through the <a href="http://logsearch.wwff.co/index.php" target="_blank" style="text-decoration:underline">program website</a></li>
                                 </ul>
                                 <p>Hunters</p>
                                 <ul>
@@ -95,7 +130,6 @@
                                     <li>
                                         All QSO’s are valid for hunters, regardless of the number for QSO’s made in the activation.
                                     </li>
-                                    <li>Certificate requests should be sent through the <a href="http://logsearch.wwff.co/index.php" target="_blank" style="text-decoration:underline">program website</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -118,7 +152,8 @@
                         הפרסים יינתנו בשתי קטגוריות, "מפעילים" ו "ציידים".<br />
                         "מפעילים" הם חובבים שמפעילים את הציוד שלהם מתוך שמורות הטבע והפארקים שמשתתפים בתוכנית.<br />
                         "ציידים" הם חובבים שמבצעים קשרים או מתעדים קשרים (מאזינים) עם "מפעילים".<br />
-                        כל מי שזכאי לפרס, יוכל לקבל קובץ אלקטרוני, באיכות גבוהה מאוד, להדפסה עצמית ובחינם!
+                        כל מי שזכאי לפרס, יוכל לקבל קובץ אלקטרוני, באיכות גבוהה מאוד, להדפסה עצמית ובחינם!<br />
+                        את בקשת התעודה יש להגיש דרך <a href="http://logsearch.wwff.co/index.php" target="_blank" style="text-decoration:underline">אתר התוכנית</a>
                     </p>
                 </div>
             </div>
@@ -138,6 +173,7 @@
                         'Activators' are those amateurs who operate portable from within designated NR or Parks in Israel.<br />
                         'Hunters' are those amateurs who make contact or log contact (SWL's) with 'Activators'.<br />
                         All Awards are free of charge for a self printing, super high quality PNG file.<br />
+                        Certificate requests should be sent through the <a href="http://logsearch.wwff.co/index.php" target="_blank" style="text-decoration:underline">program website</a>
                     </p>
                 </div>
             </div>
@@ -147,183 +183,1392 @@
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i4">
-                        תעודות
+                        רפרנסים
                     </a>
                 </h4>
             </div>
             <div id="i4" class="panel-collapse collapse">
                 <div class="panel-body">
-                    <p>חובבי רדיו יהיו זכאים לקבל תעודות במספר קטגוריות:</p>
-                    למפעילים:
-                    <ul>
-                        <li><strong>תעודת הפעלה קבוצתית</strong>: על הפעלה ממקטע בשביל ע"י קבוצה של 5 חובבי רדיו ומעלה</li>
-                        <li>
-                            <strong>תעודת מפעיל מתחיל</strong>: על הפעלה מ 10 מקטעים או יותר
-                        </li>
-                        <li>
-                            <strong>תעודת מפעיל מתמיד</strong>: על הפעלה מ 20 מקטעים או יותר
-                        </li>
-                        <li>
-                            <strong>תעודת מפעיל נחוש</strong>: על הפעלה מ 30 מקטעים או יותר
-                        </li>
-                        <li>
-                            <strong>תעודת מפעיל כל השביל</strong>: על הפעלה מ 46 המקטעים
-                        </li>
-                    </ul>
-                    
-                    לעוקבים:
-                    <ul>
-                        <li>
-                            <strong>תעודת עוקב מתחיל</strong>: על יצירת קשר עם 10 מקטעים או יותר
-                        </li>
-                        <li>
-                            <strong>תעודת עוקב מתמיד</strong>: על יצירת קשר עם 20 מקטעים או יותר
-                        </li>
-                        <li>
-                            <strong>תעודת עוקב נחוש</strong>: על יצירת קשר עם 30 מקטעים או יותר
-                        </li>
-                        <li><strong>תעודת עוקב כל השביל</strong>: על יצירת קשר עם 46 המקטעים</li>
-                    </ul>
 
-                    <p>
-                        הכנס את אות הקריאה שלך כדי לבדוק זכאות לתעודה:
-                    </p>
-                    <p>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-3 col-xs-3">
-
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-3">
-                                <button data-bind="click: GetWokedSections" type="button" class="btn btn-info"><span class="glyphicon glyphicon-certificate"></span> בדוק</button>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                <input class="form-control" data-bind="value: callsign" placeholder="אות קריאה" type="text" tabindex="1" />
+                    <div class="row" style="direction:ltr; margin-bottom:20px">
+                        <div class="col-md-4 pull-right" style="max-width: 350px; margin-top:8px;">
+                            <div id="custom-search-input">
+                                <div class="input-group col-md-12">
+                                    <input type="text" class="  search-query form-control" placeholder="Search" data-bind="value: searchInput, valueUpdate: 'afterkeydown'">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-success" type="button">
+                                            <span class="icon icon-search"></span>
+                                        </button>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </p>
-                    <p>
-                        <div id="sectionsPanel" data-bind="foreach: linkList" style="direction:ltr">
-                            <div class="section" data-bind="css: { worked_section: section }, html: section"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-grey margin-bottom-40">
+                                <div class="panel-heading">
+                                    <span class="panel-title text-right">רשימת אתרי 4XFF</span>
+                                    <!--<span class="panel-title pull-left">Echolink</span>-->
+                                </div>
+                                <table class="table table-striped" id="dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th style="text-align: right">מזהה</th>
+                                            <th style="text-align: right">שם</th>
+                                            <th style="text-align: right">איזור</th>
+                                            <th style="text-align: right">קישור</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>4XFF-0001</td>
+                                            <td>חוף אכזיב</td>
+                                            <td>
+                                                חוף הגליל ועמק עכו
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/achziv/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0002</td>
+                                            <td>נחל אלכסנדר</td>
+                                            <td>
+                                                השרון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/alexanderStreamHofBetYanai/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0003</td>
+                                            <td>אשקלון</td>
+                                            <td>
+                                                פלשת
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/ashkelon/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0004</td>
+                                            <td>עבדת</td>
+                                            <td>
+                                                הר הנגב
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/avdat/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0005</td>
+                                            <td>יער ברעם</td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/baram/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0006</td>
+                                            <td>עשוש</td>
+                                            <td>
+                                                מזרח הנגב וצפון הערבה
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A2%D7%A9%D7%95%D7%A9" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0007</td>
+                                            <td>בית גוברין - מרשה</td>
+                                            <td>
+                                                שפלה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/betGuvrinMaresha/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0008</td>
+                                            <td>בית שאן</td>
+                                            <td>
+                                                בקעת בית שאן
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/betShean/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0009</td>
+                                            <td>עיר דוד</td>
+                                            <td>
+                                                ירושלים
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/cityofDavidJerusalem%20Walls/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0010</td>
+                                            <td>קיסריה</td>
+                                            <td>
+                                                השרון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/caesarea/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0011</td>
+                                            <td>חוף דור\הבונים</td>
+                                            <td>
+                                                חוף ההכרמל
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/dorHabonim/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0012</td>
+                                            <td>גילבוע</td>
+                                            <td>
+                                                הגלבוע והעמקים
+                                            </td>
+                                            <td><a href="http://he.wikipedia.org/wiki/%D7%94%D7%A8_%D7%94%D7%92%D7%9C%D7%91%D7%95%D7%A2" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0013</td>
+                                            <td>הנחלים הגדולים</td>
+                                            <td>
+                                                דרום הנגב
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%94%D7%A0%D7%97%D7%9C%D7%99%D7%9D_%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%99%D7%9D_%D7%95%D7%A7%D7%98%D7%95%D7%A8%D7%94" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0014</td>
+                                            <td>הר הנגב</td>
+                                            <td>
+                                                הר הנגב
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/negev/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0015</td>
+                                            <td>החולה</td>
+                                            <td>
+                                                עמק החולה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/hula/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0016</td>
+                                            <td>עין גדי</td>
+                                            <td>
+                                                דרום מדבר יהודה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/enGedi/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0017</td>
+                                            <td>מדבר יהודה</td>
+                                            <td>
+                                                דרום מדבר יהודה
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%9E%D7%93%D7%91%D7%A8_%D7%99%D7%94%D7%95%D7%93%D7%94" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0018</td>
+                                            <td>הבשור, אשכול</td>
+                                            <td>
+                                                הנגב המערבי
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/eshkol/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0019</td>
+                                            <td>הרי יהודה, דרגות, כרמילה, שיירות</td>
+                                            <td>
+                                                הרי ירושלים
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/yhuda/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0020</td>
+                                            <td>מכתש רמון</td>
+                                            <td>
+                                                צפון הנגב
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/ramon/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0021</td>
+                                            <td>אילת, חוף האלמוגים</td>
+                                            <td>
+                                                הרי אילת ודרום הערבה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/coralBeach/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0022</td>
+                                            <td>הר מירון</td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/meron/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0023</td>
+                                            <td>הר חרמון, בניאס, שניר, נמרוד</td>
+                                            <td>
+                                                עמק החולה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/nahalSnir/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0024</td>
+                                            <td>כורסי</td>
+                                            <td>
+                                                סובב כנרת
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/kursi/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0025</td>
+                                            <td>הר תבור, נחל תבור</td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/nahalTavor/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0026</td>
+                                            <td>ממשית</td>
+                                            <td>
+                                                הר הנגב
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/mamshit/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0027</td>
+                                            <td>מצדה</td>
+                                            <td>
+                                                דרום מדבר יהודה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/masada/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0028</td>
+                                            <td>הר הכרמל</td>
+                                            <td>
+                                                הכרמל
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/mountCarmel/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0029</td>
+                                            <td>פארק הירדן, בטחה, בית צידה, זאכי, מג'רסה</td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/majrase/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0030</td>
+                                            <td>קומראן</td>
+                                            <td>
+                                                בקעת הירדן ומזרח השומרון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/qumran/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0031</td>
+                                            <td>פארק שרון</td>
+                                            <td>
+                                                השרון
+                                            </td>
+                                            <td><a href="http://www.parksharon.co.il/" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0032</td>
+                                            <td>שבטה</td>
+                                            <td>
+                                                חבל ניצנה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/shivta/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0033</td>
+                                            <td>תמנע</td>
+                                            <td>
+                                                הרי אילת ודרום הערבה
+                                            </td>
+                                            <td><a href="http://www.parktimna.co.il/" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0034</td>
+                                            <td>יער יהודיה, גמלא, זוויתן, משושים</td>
+                                            <td>
+                                                רמת הגולן
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/yehudiyaforest/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0035</td>
+                                            <td>תל באר שבע</td>
+                                            <td>
+                                                צפון הנגב
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/telBeerSheva/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0036</td>
+                                            <td>תל חצור</td>
+                                            <td>
+                                                עמק החולה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/telHazor/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0037</td>
+                                            <td>מגידו</td>
+                                            <td>
+                                                רמת מנשה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/megiddo/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0038</td>
+                                            <td>ירקון</td>
+                                            <td>
+                                                השרון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/yarkon/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0039</td>
+                                            <td>מצוקי צין</td>
+                                            <td>
+                                                מזרח הנגב וצפון הערבה
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%94%D7%A8_%D7%A6%D7%99%D7%9F" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0040</td>
+                                            <td>ציפורי</td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/zippori/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0041</td>
+                                            <td>גן לאומי אפולוניה (תל ארשף)</td>
+                                            <td>
+                                                השרון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/apollonia/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0042</td>
+                                            <td>גן לאומי קסטל</td>
+                                            <td>
+                                                הרי ירושלים
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/castel/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0043</td>
+                                            <td>גן לאומי עין חמד</td>
+                                            <td>
+                                                הרי ירושלים
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/enHemedAquaBella/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0044</td>
+                                            <td>שמורת טבע מערת הנטיפים</td>
+                                            <td>
+                                                הרי ירושלים
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/stalactiteCave/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0045</td>
+                                            <td>שמורת טבע נחל עמוד</td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/amud/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0046</td>
+                                            <td>גן לאומי ושמורת טבע ארבל</td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/arbel/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0047</td>
+                                            <td>שמורת טבע גמלא</td>
+                                            <td>
+                                                רמת הגולן
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/Gamla/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0048</td>
+                                            <td>גן לאומי חורשת טל</td>
+                                            <td>
+                                                עמק החולה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/hurshatTal/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0049</td>
+                                            <td>גן לאומי כורזים</td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/korazim/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0050</td>
+                                            <td>שמורת טבע תל דן</td>
+                                            <td>
+                                                עמק החולה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/telDan/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0051</td>
+                                            <td>שמורת טבע נחל עיון (התנור)</td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/iyonTanur/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0052</td>
+                                            <td>גן לאומי מבצר יחיעם</td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/yehiamFortress/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0053</td>
+                                            <td>שמורת טבע נחל פרת - עין פרת</td>
+                                            <td>
+                                                צפון מדבר יהודה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/enPrat/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0054</td>
+                                            <td>גן לאומי הרודיון</td>
+                                            <td>
+                                                גוש עציון והר חברון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/herodium/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0055</td>
+                                            <td>גן לאומי נבי סמואל</td>
+                                            <td>
+                                                השומרון ובנימין
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/nebiSamuel/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0056</td>
+                                            <td>גן לאומי שומרון (סבסטיה)</td>
+                                            <td>
+                                                השומרון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/sebastya/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0057</td>
+                                            <td>אתר הטבילה קאסר אל יהוד</td>
+                                            <td>
+                                                בקעת הירדן ומזרח השומרון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/baptismalSiteontheJordanRiverQasralYahud/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0058</td>
+                                            <td>גן לאומי קבר בן גוריון</td>
+                                            <td>
+                                                דרום הנגב
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/benGorion/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0059</td>
+                                            <td>שמורת טבע חי-בר יוטבתה</td>
+                                            <td>
+                                                הרי אילת ודרום הערבה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/haiBarYotvata/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0060</td>
+                                            <td>גן לאומי תל ערד</td>
+                                            <td>
+                                                דרום מדבר יהודה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/telArad/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0061</td>
+                                            <td>גן לאומי כוכב הירדן</td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/belvoirKokhavHaYarden/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0062</td>
+                                            <td>בית כנסת בית אלפא</td>
+                                            <td>
+                                                בקעת בית שאן
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/betAlfa/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0063</td>
+                                            <td>גן לאומי בית שערים</td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/betShearim/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0064</td>
+                                            <td>גן לאומי כפר נחום</td>
+                                            <td>
+                                                סובב כנרת
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/caperNaum/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0065</td>
+                                            <td>שמורת טבע עין אפק</td>
+                                            <td>
+                                                חוף הגליל ועמק עכו
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/enAfek/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0066</td>
+                                            <td>גן לאומי גן השלושה (הסחנה)</td>
+                                            <td>
+                                                בקעת בית שאן
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/ganHashloshaSahne/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0067</td>
+                                            <td>גן לאומי חמת טבריה</td>
+                                            <td>
+                                                סובב כנרת
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/hamatTverya/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0068</td>
+                                            <td>גן לאומי מעין חרוד</td>
+                                            <td>
+                                                הגלבוע והעמקים
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/maayanHarod/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0069</td>
+                                            <td>שמורת טבע נחל המערות</td>
+                                            <td>הכרמל</td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/nahalMearot/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0070</td>
+                                            <td>שמורת טבע נחל תנינים</td>
+                                            <td>
+                                                השרון
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/riverCrocodiles/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0071</td>
+                                            <td>שמורת טבע עיינות צוקים (עין פשחה)</td>
+                                            <td>
+                                                צפון מדבר יהודה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/enotTsukimN/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0072</td>
+                                            <td>גן לאומי מבצר נמרוד (קלעת נמרוד)</td>
+                                            <td>
+                                                רמת הגולן
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/mvzerNmrod/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0073</td>
+                                            <td>שמורת טבע נחל שניר - חצבאני</td>
+                                            <td>
+                                                עמק החולה
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/nahalSnir/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0074</td>
+                                            <td>שמורת טבע נחל המשושים</td>
+                                            <td>
+                                                רמת הגולן
+                                            </td>
+                                            <td><a href="http://www.parks.org.il/ParksAndReserves/Meshushim/Pages/default.aspx" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4XFF-0075</td>
+                                            <td>גן לאומי ראש הנקרה</td>
+                                            <td>
+                                                חוף הגליל
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%A8%D7%90%D7%A9_%D7%94%D7%A0%D7%A7%D7%A8%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0076</td>
+                                            <td>
+                                                שמורת זקום מעוז חיים
+                                            </td>
+                                            <td>
+                                                בקעת בית שאן
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%96%D7%A7%D7%95%D7%9D_%D7%9E%D7%A2%D7%95%D7%96_%D7%97%D7%99%D7%99%D7%9D&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0077</td>
+                                            <td>
+                                                שמורות עין כפתור ועין טיון
+                                            </td>
+                                            <td>
+                                                בקעת בית שאן
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A2%D7%99%D7%9F_%D7%9B%D7%A4%D7%AA%D7%95%D7%A8&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0078</td>
+                                            <td>
+                                                שמורת תל סהרון
+                                            </td>
+                                            <td>
+                                                בקעת בית שאן
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%AA%D7%9C_%D7%A1%D7%94%D7%A8%D7%95%D7%9F&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0079</td>
+                                            <td>
+                                                שמורת נחל הקיבוצים
+                                            </td>
+                                            <td>
+                                                בקעת בית שאן
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A0%D7%97%D7%9C_%D7%94%D7%A7%D7%99%D7%91%D7%95%D7%A6%D7%99%D7%9D&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0080</td>
+                                            <td>שמורות ביצת ואדי מלחה והסלוודורה הפרסית</td>
+                                            <td>
+                                                בקעת הירדן ומזרח השומרון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%91%D7%99%D7%A6%D7%AA_%D7%95%D7%90%D7%93%D7%99_%D7%9E%D7%9C%D7%97%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0081</td>
+                                            <td>
+                                                גן לאומי גוב יוסף
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%92%D7%95%D7%91_%D7%99%D7%95%D7%A1%D7%A3&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0082</td>
+                                            <td>
+                                                גן לאומי מונפור
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%9E%D7%95%D7%A0%D7%A4%D7%95%D7%A8&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0083</td>
+                                            <td>
+                                                גן לאומי מצודת כ"ח
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%9E%D7%A6%D7%95%D7%93%D7%AA_%D7%9B%22%D7%97&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0084</td>
+                                            <td>
+                                                גן לאומי קרן נפתלי
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%A7%D7%A8%D7%9F_%D7%A0%D7%A4%D7%AA%D7%9C%D7%99&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0085</td>
+                                            <td>
+                                                גן לאומי תל קדש
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%AA%D7%9C_%D7%A7%D7%93%D7%A9&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0086</td>
+                                            <td>
+                                                שמורות אירוס מנרה וסחלבי מנרה
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%90%D7%99%D7%A8%D7%95%D7%A1_%D7%9E%D7%A0%D7%A8%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0087</td>
+                                            <td>
+                                                שמורת בריכות דלתון
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%91%D7%A8%D7%99%D7%9B%D7%95%D7%AA_%D7%93%D7%9C%D7%AA%D7%95%D7%9F&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0088</td>
+                                            <td>
+                                                שמורת בריכות צוריאל
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%91%D7%A8%D7%99%D7%9B%D7%95%D7%AA_%D7%A6%D7%95%D7%A8%D7%99%D7%90%D7%9C&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0089</td>
+                                            <td>
+                                                שמורת בריכות שומרה
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%91%D7%A8%D7%99%D7%9B%D7%95%D7%AA_%D7%A9%D7%95%D7%9E%D7%A8%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0090</td>
+                                            <td>
+                                                שמורת בריכת ג'עודי
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%91%D7%A8%D7%99%D7%9B%D7%AA_%D7%92%27%D7%A2%D7%95%D7%93%D7%99&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0091</td>
+                                            <td>
+                                                שמורת בריכת דוב"ב
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%91%D7%A8%D7%99%D7%9B%D7%AA_%D7%93%D7%95%D7%91%22%D7%91&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0092</td>
+                                            <td>
+                                                שמורות הר גודרים ובריכת סאסא
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%94%D7%A8_%D7%92%D7%95%D7%93%D7%A8%D7%99%D7%9D&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0093</td>
+                                            <td>
+                                                שמורת הר סאסא
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%94%D7%A8_%D7%A1%D7%90%D7%A1%D7%90&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0094</td>
+                                            <td>
+                                                שמורת בריכת פסוטה
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%91%D7%A8%D7%99%D7%9B%D7%AA_%D7%A4%D7%A1%D7%95%D7%98%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0095</td>
+                                            <td>
+                                                שמורת בריכת קש
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%91%D7%A8%D7%99%D7%9B%D7%AA_%D7%A7%D7%A9&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0096</td>
+                                            <td>
+                                                שמורת הר גמל
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%94%D7%A8_%D7%92%D7%9E%D7%9C&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0097</td>
+                                            <td>
+                                                שמורת הר נזר
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%94%D7%A8_%D7%A0%D7%96%D7%A8&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0098</td>
+                                            <td>
+                                                שמורת הר סנה
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%94%D7%A8_%D7%A1%D7%A0%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0099</td>
+                                            <td>
+                                                שמורת הר עמיעד
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%94%D7%A8_%D7%A2%D7%9E%D7%99%D7%A2%D7%93&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0100</td>
+                                            <td>
+                                                שמורת חורבת בילטון
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%97%D7%95%D7%A8%D7%91%D7%AA_%D7%91%D7%99%D7%9C%D7%98%D7%95%D7%9F&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0101</td>
+                                            <td>
+                                                שמורת טרשי צפת
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%98%D7%A8%D7%A9%D7%99_%D7%A6%D7%A4%D7%AA&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0102</td>
+                                            <td>
+                                                שמורת כרם בן-זימרה
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%9B%D7%A8%D7%9D_%D7%91%D7%9F-%D7%96%D7%99%D7%9E%D7%A8%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0103</td>
+                                            <td>
+                                                שמורת מורדות הרי נפתלי
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%9E%D7%95%D7%A8%D7%93%D7%95%D7%AA_%D7%94%D7%A8%D7%99_%D7%A0%D7%A4%D7%AA%D7%9C%D7%99&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0104</td>
+                                            <td>
+                                                שמורת מערת פער
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%9E%D7%A2%D7%A8%D7%AA_%D7%A4%D7%A2%D7%A8&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0105</td>
+                                            <td>
+                                                שמורת מצד אבירים
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%9E%D7%A6%D7%93_%D7%90%D7%91%D7%99%D7%A8%D7%99%D7%9D&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0106</td>
+                                            <td>
+                                                שמורת מרגליות
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%9E%D7%A8%D7%92%D7%9C%D7%99%D7%95%D7%AA&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0107</td>
+                                            <td>
+                                                שמורת נחל בית העמק
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A0%D7%97%D7%9C_%D7%91%D7%99%D7%AA_%D7%94%D7%A2%D7%9E%D7%A7&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0108</td>
+                                            <td>
+                                                שמורת נחל בצת
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A0%D7%97%D7%9C_%D7%91%D7%A6%D7%AA&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0109</td>
+                                            <td>
+                                                שמורת נחל דלתון
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A0%D7%97%D7%9C_%D7%93%D7%9C%D7%AA%D7%95%D7%9F&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0110</td>
+                                            <td>
+                                                שמורת נחל יצהר
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A0%D7%97%D7%9C_%D7%99%D7%A6%D7%94%D7%A8&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0111</td>
+                                            <td>
+                                                שמורת נחל כזיב
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A0%D7%97%D7%9C_%D7%9B%D7%96%D7%99%D7%91&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0112</td>
+                                            <td>
+                                                שמורת נחל משגב
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A0%D7%97%D7%9C_%D7%9E%D7%A9%D7%92%D7%91&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0113</td>
+                                            <td>
+                                                שמורת נחל מתת
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A0%D7%97%D7%9C_%D7%9E%D7%AA%D7%AA&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0114</td>
+                                            <td>
+                                                שמורת נחל שרך
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A0%D7%97%D7%9C_%D7%A9%D7%A8%D7%9A&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0115</td>
+                                            <td>
+                                                שמורת סלע עכברה
+                                            </td>
+                                            <td>
+                                                גליל עליון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A1%D7%9C%D7%A2_%D7%A2%D7%9B%D7%91%D7%A8%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0116</td>
+                                            <td>
+                                                גן לאומי חורבת אושה
+                                            </td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%97%D7%95%D7%A8%D7%91%D7%AA_%D7%90%D7%95%D7%A9%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0117</td>
+                                            <td>
+                                                גן לאומי נחל צלמון
+                                            </td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%A0%D7%97%D7%9C_%D7%A6%D7%9C%D7%9E%D7%95%D7%9F&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0118</td>
+                                            <td>
+                                                גן לאומי קרני חיטים
+                                            </td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%A7%D7%A8%D7%A0%D7%99_%D7%97%D7%99%D7%98%D7%99%D7%9D&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0119</td>
+                                            <td>
+                                                גן לאומי שדה עמודים
+                                            </td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%A9%D7%93%D7%94_%D7%A2%D7%9E%D7%95%D7%93%D7%99%D7%9D&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0120</td>
+                                            <td>
+                                                גן לאומי שימרון
+                                            </td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%A9%D7%99%D7%9E%D7%A8%D7%95%D7%9F&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0121</td>
+                                            <td>
+                                                גן לאומי תל יודפת
+                                            </td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%AA%D7%9C_%D7%99%D7%95%D7%93%D7%A4%D7%AA&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0122</td>
+                                            <td>
+                                                שמורת אלות סירין
+                                            </td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%90%D7%9C%D7%95%D7%AA_%D7%A1%D7%99%D7%A8%D7%99%D7%9F&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0123</td>
+                                            <td>
+                                                שמורת בקעת בית נטופה
+                                            </td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%91%D7%A7%D7%A2%D7%AA_%D7%91%D7%99%D7%AA_%D7%A0%D7%98%D7%95%D7%A4%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0124</td>
+                                            <td>
+                                                שמורת גבעת המורה
+                                            </td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%92%D7%91%D7%A2%D7%AA_%D7%94%D7%9E%D7%95%D7%A8%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0125</td>
+                                            <td>
+                                                שמורת הר יבנאל
+                                            </td>
+                                            <td>
+                                                גליל תחתון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%94%D7%A8_%D7%99%D7%91%D7%A0%D7%90%D7%9C&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0126</td>
+                                            <td>
+                                                שמורת צוקי שיירות
+                                            </td>
+                                            <td>
+                                                דרום הנגב
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A6%D7%95%D7%A7%D7%99_%D7%A9%D7%99%D7%99%D7%A8%D7%95%D7%AA&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0127</td>
+                                            <td>
+                                                שמורת נחל אבוב
+                                            </td>
+                                            <td>
+                                                דרום מדבר יהודה
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%A0%D7%97%D7%9C_%D7%90%D7%91%D7%95%D7%91&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0128</td>
+                                            <td>
+                                                שמורת תל קריות
+                                            </td>
+                                            <td>
+                                                דרום מדבר יהודה
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%AA%D7%9C_%D7%A7%D7%A8%D7%99%D7%95%D7%AA&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0129</td>
+                                            <td>
+                                                גן לאומי בית עיטאב
+                                            </td>
+                                            <td>
+                                                הרי ירושלים
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%91%D7%99%D7%AA_%D7%A2%D7%99%D7%98%D7%90%D7%91&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0130</td>
+                                            <td>
+                                                גן לאומי הר חרת
+                                            </td>
+                                            <td>
+                                                הרי ירושלים
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%94%D7%A8_%D7%97%D7%A8%D7%AA&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0131</td>
+                                            <td>
+                                                גן לאומי עינות תלם
+                                            </td>
+                                            <td>
+                                                הרי ירושלים
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%A2%D7%99%D7%A0%D7%95%D7%AA_%D7%AA%D7%9C%D7%9D&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0132</td>
+                                            <td>
+                                                גן לאומי צובה
+                                            </td>
+                                            <td>
+                                                הרי ירושלים
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%A6%D7%95%D7%91%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0133</td>
+                                            <td>
+                                                שמורת המסרק
+                                            </td>
+                                            <td>
+                                                הרי ירושלים
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%94%D7%9E%D7%A1%D7%A8%D7%A7&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0134</td>
+                                            <td>
+                                                שמורת הר טייסים
+                                            </td>
+                                            <td>
+                                                הרי ירושלים
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%94%D7%A8_%D7%98%D7%99%D7%99%D7%A1%D7%99%D7%9D&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0135</td>
+                                            <td>
+                                                שמורת חורבת סעדים
+                                            </td>
+                                            <td>
+                                                הרי ירושלים
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%97%D7%95%D7%A8%D7%91%D7%AA_%D7%A1%D7%A2%D7%93%D7%99%D7%9D&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0136</td>
+                                            <td>
+                                                גן לאומי עין כרם
+                                            </td>
+                                            <td>
+                                                ירושלים
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%A2%D7%99%D7%9F_%D7%9B%D7%A8%D7%9D&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0137</td>
+                                            <td>
+                                                גן לאומי עמק צורים
+                                            </td>
+                                            <td>
+                                                ירושלים
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%A2%D7%9E%D7%A7_%D7%A6%D7%95%D7%A8%D7%99%D7%9D&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0138</td>
+                                            <td>
+                                                שמורת ליפתא
+                                            </td>
+                                            <td>
+                                                ירושלים
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%9C%D7%99%D7%A4%D7%AA%D7%90&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0139</td>
+                                            <td>
+                                                גן לאומי מאוזוליאום אלעד
+                                            </td>
+                                            <td>
+                                                מורדות השומרון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%9E%D7%90%D7%95%D7%96%D7%95%D7%9C%D7%99%D7%90%D7%95%D7%9D_%D7%90%D7%9C%D7%A2%D7%93&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0140</td>
+                                            <td>
+                                                גן לאומי מגדל אפק
+                                            </td>
+                                            <td>
+                                                מורדות השומרון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%9E%D7%92%D7%93%D7%9C_%D7%90%D7%A4%D7%A7&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0141</td>
+                                            <td>
+                                                גן לאומי צור נתן
+                                            </td>
+                                            <td>
+                                                מורדות השומרון
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%92%D7%9F_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%A6%D7%95%D7%A8_%D7%A0%D7%AA%D7%9F&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0142</td>
+                                            <td>
+                                                שמורת אחו גונן
+                                            </td>
+                                            <td>
+                                                עמק החולה
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%90%D7%97%D7%95_%D7%92%D7%95%D7%A0%D7%9F&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XFF-0143</td>
+                                            <td>
+                                                שמורת תל אנפה
+                                            </td>
+                                            <td>
+                                                עמק החולה
+                                            </td>
+                                            <td><a href="http://www.inature.info/wiki/%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%AA%D7%9C_%D7%90%D7%A0%D7%A4%D7%94&#10;" target="_blank"><i class="icon-info"></i></a></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        <div class="clearfix"></div>
-                    </p>
-                    <p>
-                        <div data-bind="visible:linkList().length < 10 && linkList().length > 0">עבדת מול <label data-bind="text:linkList().length"></label> מקטעים. עוד <span data-bind="text:10-linkList().length"></span> ותהיה זכאי לתעודה!</div>
-                        <div data-bind="visible:linkList().length >= 10"><span class="glyphicon glyphicon-ok"></span> ברכות, עבדת מול <label data-bind="text:linkList().length"></label> מקטעים ואתה זכאי לתעודה!</div>
-                        <div data-bind="visible:didNotWork"><span class="glyphicon glyphicon-star"></span> עוד לא עבדת אף מקטע, להשתמע!</div>
-                    </p>
+                    </div>
+                    <!--/row-fluid-->
+
+
                 </div>
             </div>
         </div>
-        <div class="panel panel-default" style="direction:ltr" data-bind="visible:shell.lang() == 'en'">
+        <!--<div class="panel panel-default" style="direction:ltr" data-bind="visible:shell.lang() == 'en'">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i5">
-                        Awards
+                        References
                     </a>
                 </h4>
             </div>
             <div id="i5" class="panel-collapse collapse">
                 <div class="panel-body">
-                    <p>
-                        Radio operators that would work this special callsign, may ask for a nice certificate (The activators are responsible for uploading their logs so you won't have to).<br />
-                        We will issue awards to stations working 10, 20, 30 and all 46 "Israel National Trail" sections.
-                    </p>
-                    <!--<img src="assets/img/trail_view.jpg" width="100%" />-->
-                    <p>
-                        Enter your callsign to check your eligibility:
-                    </p>
-                    <p>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                <input class="form-control" data-bind="value: callsign" placeholder="Your Call" type="text" tabindex="1" />
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-3">
-                                <button data-bind="click: GetWokedSections" type="button" class="btn btn-info"><span class="glyphicon glyphicon-certificate"></span> Check</button>
-                            </div>
-                        </div>
-                    </p>
-                    <p>
-                        <div id="sectionsPanel" data-bind="foreach: linkList">
-                            <div class="section" data-bind="css: { worked_section: section }, html: section"></div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </p>
-                    <p>
-                        <div data-bind="visible:linkList().length < 10 && linkList().length > 0">You have worked <label data-bind="text:linkList().length"></label> sections. <span data-bind="text:10-linkList().length"></span> more and your are eligable for an award!</div>
-                        <div data-bind="visible:linkList().length >= 10"><span class="glyphicon glyphicon-ok"></span> Congratulations, you have worked <label data-bind="text:linkList().length"></label> sections and your are eligable for an award!</div>
-                        <div data-bind="visible:didNotWork"><span class="glyphicon glyphicon-star"></span> You did not work any section yet.. Hope to hear you on the air soon!</div>
-                    </p>
+                    
                 </div>
             </div>
-        </div>
+        </div>-->
 
         
     </div>
     <!--/row-fluid-->
-    <!--<div class="tag-box tag-box-v2">
-        <p>שביל ישראל הוא נתיב הליכה ארוך שנמשך לאורך כל מדינת ישראל, המתחיל בבית אוסישקין שבקיבוץ דן בצפון ומסתיים בבית ספר שדה אילת, על חוף מפרץ אילת. אורכו היום, לאחר השינויים שבוצעו בו במהלך השנים, הוא כ-1,040 קילומטרים. שביל ישראל הוא גולת הכותרת ברשת סימון השבילים הארצית שיזמה ויצרה החברה להגנת הטבע, המסמנת וממפה את כל מסלולי הטיול בארץ, על ידי הוועדה לשבילי ישראל.</p>
-        <p>(השביל נחנך בפסח, אפריל 1995, לאחר כ-16 שנות עבודה ודיונים על התוואי. הרעיון הועלה בראשית שנות השמונים על ידי אברהם תמיר, שהתרשם משביל האפלצ'ים בארצות הברית. את הרעיון העביר תמיר לאורי דביר שתכנן וביצע‏. בתכנונו הושם דגש על מתן ייצוג לכל נופי ואזורי הארץ וכן על מעבר באתרים חשובים לכל הדתות. השביל מהווה מעין שלד לשאר שבילי הטיול בארץ שרבים מהם יוצאים ממנו. בשונה מסימון השבילים הנפוץ בארץ, פס צבעוני בין שני פסים לבנים, מסומן שביל ישראל באמצעות שלושה פסים מקבילים במדורג: לבן, כחול וכתום. הסימון הוא מדורג - כאשר הפס הלבן עליון, כיוון ההליכה צפונה ואילו כאשר הכתום עליון דרומה (יש הסוברים שהלבן מייצג את החרמון המושלג והכתום מייצג את המדבר‏</p>
-        <p>לכל אורכו, שביל ישראל נמצא בתחומי הקו הירוק. בשנת 2003 הוסט חלק מתוואי השביל באזור השרון משפלת ההר לכיוון הים. הסיבות העיקריות להסטה זו הן התפתחות כביש חוצה ישראל (כביש מספר 6) שדרס קטעים מהשביל, הימנעות מסיכון ההולכים לאורך קו התפר והרצון להוסיף נופי ערים וחוף ים. שינויים מהותיים נוספים נעשו בשביל באזור הנגב, משום שהתוואי הקודם כלל קטעים ארוכים לאורך כביש 40 לשם הימנעות מכניסה לשטחי האש הרבים משני עבריו.</p>
-        <p>שביל ישראל נבחר כאחד מ-20 מסלולי ההליכה הטובים ביותר על ידי נשיונל ג'אוגרפיק, ותואר על ידי צוות השופטים כמשלב טבע, היסטוריה, מורשת ותרבות עם "נופים תנ"כיים בקנה מידה גדול וכן [נופים] מחיי היום-יום של הישראלים המודרניים"‏</p>
-        <a href="https://he.wikipedia.org/wiki/%D7%A9%D7%91%D7%99%D7%9C_%D7%99%D7%A9%D7%A8%D7%90%D7%9C" target="_blank"> מתוך ויקיפדיה</a>
-    </div>-->
-    <div class="row" style="margin-top:20px;direction:ltr">
-        <div class="col-md-3 col-sm-12">
-            <div id="map_display">
-                <div style="background-image:url(assets/img/israel_map.jpg); background-size: 260px; background-repeat:no-repeat; height:640px">
-                    <span style="top:20px;left:197px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=260" alt="שביל ישראל: מקיבוץ דן לקיבוץ כפר גלעדי" title="שביל ישראל: מקיבוץ דן לקיבוץ כפר גלעדי">1</a></span>
-                    <span style="top:20px;left:187px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=259" alt="שביל ישראל: מכפר גלעדי למושב רמות נפתלי" title="שביל ישראל: מכפר גלעדי למושב רמות נפתלי">2</a></span>
-                    <span style="top:42px;left:185px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=258" alt="שביל ישראל: ממושב רמות נפתלי לקיבוץ ברעם" title="שביל ישראל: ממושב רמות נפתלי לקיבוץ ברעם">3</a></span>
-                    <span style="top:50px;left:170px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=257" alt="שביל ישראל: מקיבוץ ברעם לחניון נחל עמוד" title="שביל ישראל: מקיבוץ ברעם לחניון נחל עמוד">4</a></span>
-                    <span style="top:63px;left:173px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=256" alt="שביל ישראל: מחניון נחל עמוד לעין נון" title="שביל ישראל: מחניון נחל עמוד לעין נון">5</a></span>
-                    <span style="top:84px;left:179px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=255" alt="שביל ישראל: מעין נון לכנרת מושבה" title="שביל ישראל: מעין נון לכנרת מושבה">6</a></span>
-                    <span style="top:103px;left:186px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=254" alt="שביל ישראל: מכנרת מושבה לכפר קיש" title="שביל ישראל: מכנרת מושבה לכפר קיש">7</a></span>
-                    <span style="top:112px;left:171px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=253" alt="שביל ישראל: מכפר קיש להר יונה" title="שביל ישראל: מכפר קיש להר יונה">8</a></span>
-                    <span style="top:103px;left:159px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=252" alt="שביל ישראל: מהר יונה לאלון הגליל" title="שביל ישראל: מהר יונה לאלון הגליל">9</a></span>
-                    <span style="top:98px;left:144px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=251" alt="שביל ישראל: מאלון הגליל לקיבוץ יגור" title="שביל ישראל: מאלון הגליל לקיבוץ יגור">10</a></span>
-                    <span style="top:100px;left:127px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=250" alt="שביל ישראל: מקיבוץ יגור לעין הוד" title="שביל ישראל: מקיבוץ יגור לעין הוד">11</a></span>
-                    <span style="top:107px;left:110px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=249" alt="שביל ישראל: מעין הוד לרמת הנדיב" title="שביל ישראל: מעין הוד לרמת הנדיב">12</a></span>
-                    <span style="top:131px;left:110px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=248" alt="שביל ישראל: מרמת הנדיב לחדרה" title="שביל ישראל: מרמת הנדיב לחדרה">13</a></span>
-                    <span style="top:148px;left:105px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=247" alt="שביל ישראל: מחדרה לחוף פולג" title="שביל ישראל: מחדרה לחוף פולג">14</a></span>
-                    <span style="top:176px;left:97px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=246" alt="שביל ישראל: מחוף פולג לתל אביב" title="שביל ישראל: מחוף פולג לתל אביב">15</a></span>
-                    <span style="top:203px;left:90px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=245" alt="שביל ישראל: מתל אביב לכפר סירקין" title="שביל ישראל: מתל אביב לכפר סירקין">16</a></span>
-                    <span style="top:207px;left:108px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=244" alt="שביל ישראל: מכפר סירקין לגמזו" title="שביל ישראל: מכפר סירקין לגמזו">17</a></span>
-                    <span style="top:230px;left:110px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=243" alt="שביל ישראל: מגמזו למסילת ציון" title="שביל ישראל: מגמזו למסילת ציון">18</a></span>
-                    <span style="top:251px;left:118px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=242" alt="שביל ישראל: ממסילת ציון לקיבוץ צובה" title="שביל ישראל: ממסילת ציון לקיבוץ צובה">19</a></span>
-                    <span style="top:254px;left:131px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=241" alt="שביל ישראל: מקיבוץ צובה לצור הדסה" title="שביל ישראל: מקיבוץ צובה לצור הדסה">20</a></span>
-                    <span style="top:263px;left:128px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=240" alt="שביל ישראל: מצור הדסה לנתיב הל''ה" title="שביל ישראל: מצור הדסה לנתיב הל''ה">21</a></span>
-                    <span style="top:269px;left:115px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=239" alt="שביל ישראל: מנתיב הל''ה לבית גוברין" title="שביל ישראל: מנתיב הל''ה לבית גוברין">22</a></span>
-                    <span style="top:281px;left:104px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=238" alt="שביל ישראל: מבית גוברין לתל קשת" title="שביל ישראל: מבית גוברין לתל קשת">23</a></span>
-                    <span style="top:293px;left:88px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=236" alt="שביל ישראל: מתל קשת לקיבוץ דבירה" title="שביל ישראל: מתל קשת לקיבוץ דבירה">24</a></span>
-                    <span style="top:313px;left:95px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=235" alt="שביל ישראל: מקיבוץ דבירה למיתר" title="שביל ישראל: מקיבוץ דבירה למיתר">25</a></span>
-                    <span style="top:327px;left:109px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=234" alt="שביל ישראל: ממיתר להר עמשא" title="שביל ישראל: ממיתר להר עמשא">26</a></span>
-                    <span style="top:324px;left:129px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=233" alt="שביל ישראל: מהר עמשא לערד" title="שביל ישראל: מהר עמשא לערד">27</a></span>
-                    <span style="top:338px;left:143px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=232" alt="שביל ישראל: מערד לחניון באר אפעה" title="שביל ישראל: מערד לחניון באר אפעה">28</a></span>
-                    <span style="top:356px;left:143px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=231" alt="שביל ישראל: מבאר אפעה לחניון מצד תמר" title="שביל ישראל: מבאר אפעה לחניון מצד תמר">29</a></span>
-                    <span style="top:375px;left:146px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=230" alt="שביל ישראל: מחניון מצד תמר למכתש הקטן" title="שביל ישראל: מחניון מצד תמר למכתש הקטן">30</a></span>
-                    <span style="top:390px;left:135px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=229" alt="שביל ישראל: מהמכתש הקטן לחניון מפעל אורון" title="שביל ישראל: מהמכתש הקטן לחניון מפעל אורון">31</a></span>
-                    <span style="top:393px;left:119px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=228" alt="שביל ישראל: ממפעל אורון לחניון נחל מדור" title="שביל ישראל: ממפעל אורון לחניון נחל מדור">32</a></span>
-                    <span style="top:405px;left:108px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=227" alt="שביל ישראל: מחניון מדור/עפרן לחוד עקב" title="שביל ישראל: מחניון מדור/עפרן לחוד עקב">33</a></span>
-                    <span style="top:405px;left:96px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=226" alt="שביל ישראל: מחוד עקב לחניון נחל חווה" title="שביל ישראל: מחוד עקב לחניון נחל חווה">34</a></span>
-                    <span style="top:423px;left:104px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=225" alt="שביל ישראל: מחניון נחל חווה למצפה רמון" title="שביל ישראל: מחניון נחל חווה למצפה רמון">35</a></span>
-                    <span style="top:441px;left:92px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=223" alt="שביל ישראל: ממצפה רמון לחניון הר סהרונים" title="שביל ישראל: ממצפה רמון לחניון הר סהרונים">36</a></span>
-                    <span style="top:444px;left:106px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=222" alt="שביל ישראל: מהר סהרונים לחניון גב חולית" title="שביל ישראל: מהר סהרונים לחניון גב חולית">37</a></span>
-                    <span style="top:438px;left:123px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=221" alt="שביל ישראל: מחניון גב חולית למושב צופר" title="שביל ישראל: מחניון גב חולית למושב צופר">38</a></span>
-                    <span style="top:450px;left:139px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=220" alt="שביל ישראל: ממושב צופר לחניון נחל ברק" title="שביל ישראל: ממושב צופר לחניון נחל ברק">39</a></span>
-                    <span style="top:473px;left:134px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=219" alt="שביל ישראל: מחניון נחל ברק לצומת ציחור" title="שביל ישראל: מחניון נחל ברק לצומת ציחור">40</a></span>
-                    <span style="top:495px;left:116px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=218" alt="שביל ישראל: מצומת ציחור לצומת שיזפון" title="שביל ישראל: מצומת ציחור לצומת שיזפון">41</a></span>
-                    <span style="top:532px;left:118px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=217" alt="שביל ישראל: מצומת שיזפון לשחרות" title="שביל ישראל: מצומת שיזפון לשחרות">42</a></span>
-                    <span style="top:555px;left:116px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=216" alt="שביל ישראל: משחרות לחניון נחל מנגן" title="שביל ישראל: משחרות לחניון נחל מנגן">43</a></span>
-                    <span style="top:570px;left:115px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=215" alt="שביל ישראל: מנחל מנגן לנחל רחם/עתק" title="שביל ישראל: מנחל מנגן לנחל רחם/עתק">44</a></span>
-                    <span style="top:587px;left:111px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=214" alt="שביל ישראל: מנחל רחם/עתק להר יהורם" title="שביל ישראל: מנחל רחם/עתק להר יהורם">45</a></span>
-                    <span style="top:605px;left:102px;"><a target="_blank" href="http://www.tiuli.com/track_info.asp?track_id=213" alt="שביל ישראל: מחניון הר יהורם לאילת" title="שביל ישראל: מחניון הר יהורם לאילת">46</a></span>
-                </div>
-            </div>
+
+    <div class="row hidden-sm hidden-xs" style="margin-top:20px;direction:ltr">
+        <div class="col-md-6 text-center">
+            <img src="assets/img/4xff.png" width="400" />
         </div>
-        <div class="col-md-9 hidden-sm hidden-xs">
-            <img src="assets/img/trail_view2.jpg" width="100%" />
+        <div class="col-md-6 text-center">
+            <img src="assets/img/wwff_logo.png" width="400" />
         </div>
+
+
     </div>
 </div>
 
