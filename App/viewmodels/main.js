@@ -30,7 +30,7 @@
     var vm = {
         activate: function () {
             //shell.selectedSubMenu('ham');
-            shell.selectedMainMenu('sections');
+            shell.selectedMainMenu('main');
             searchInput.subscribe(function (newValue) {
                 if (newValue === undefined)
                     return;

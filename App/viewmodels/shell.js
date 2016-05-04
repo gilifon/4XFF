@@ -24,8 +24,8 @@
         lang:lang,
         activate: function () {
             router.map([
-                { route: 'Dashboard', title: 'Dashboard', moduleId: 'viewmodels/dashboard', nav: true },
-                { route: '', title: 'Main', moduleId: 'viewmodels/sections', nav: true }
+                { route: '', title: 'Main', moduleId: 'viewmodels/main', nav: true },
+                { route: 'en', title: 'Main', moduleId: 'viewmodels/main', nav: true }
             ]).buildNavigationModel();
 
             return router.activate();
