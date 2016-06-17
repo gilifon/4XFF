@@ -25,7 +25,8 @@
         activate: function () {
             router.map([
                 { route: '', title: 'Main', moduleId: 'viewmodels/main', nav: true },
-                { route: 'en', title: 'Main', moduleId: 'viewmodels/main', nav: true }
+                { route: 'en', title: 'Main', moduleId: 'viewmodels/main', nav: true },
+                { route: 'Statistics', title: 'Statistics', moduleId: 'viewmodels/kdstatistics', nav: true }
             ]).buildNavigationModel();
 
             return router.activate();
